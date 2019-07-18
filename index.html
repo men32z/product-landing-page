@@ -2,16 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, scale=1.0" />
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
+<style>
+header{
+  background-color:#7d7c7c;
+  position:fixed;
+  width:100%;
+  top:0;
+}
+#header-img{
+  max-width: 100px;
+  max-height: 50px;
+  margin-left:30px;
+}
+#nav-bar{
+  position:absolute;
+  top:0;
+  right:0;
+  padding-right:20px;
+}
+ul{
+  list-style-type: none;
+}
+ul li{
+  display:inline;
+}
 
+.container{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#section1{
+  float:left;
+  width:50%;
+}
+#section2{
+  float:left;
+  width:50%;
+}
+
+@media (max-width: 600px){
+  body{
+    background-color:black;
+    color:white;
+  }
+  #section1{
+    width:100%;
+  }
+  #section2{
+    width:100%;
+  }
+}
+</style>
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <header id="header">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png" style="max-width:250px" alt="" id="header-img">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png" alt="" id="header-img">
       <nav id="nav-bar">
         <ul>
           <li><a href="#section1" class="nav-link">First link</a></li>
